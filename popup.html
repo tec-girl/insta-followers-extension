@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <div class="logo">🔍 <span>insta-followers</span></div>
+  <select id="lang" aria-label="Language">
+    <option value="es">Español</option><option value="en">English</option>
+    <option value="fr">Français</option><option value="de">Deutsch</option>
+    <option value="zh">中文</option><option value="pt">Português</option>
+  </select>
+</header>
+
+<p class="hint" data-i18n="hint">Solo tu propia cuenta, con tu sesión ya iniciada en instagram.com. Nunca pido tu contraseña y nada sale de tu navegador.</p>
+
+<button id="go" class="btn main" data-i18n="go">Extraer mis listas</button>
+<p id="status" class="status"></p>
+
+<section id="results" hidden>
+  <div class="counts">
+    <div class="count"><b id="cFollowing">0</b><span data-i18n="tFollowing">Siguiendo</span></div>
+    <div class="count"><b id="cFollowers">0</b><span data-i18n="tFollowers">Seguidores</span></div>
+    <div class="count hot"><b id="cNoBack">0</b><span data-i18n="tNoBack">No te siguen de vuelta</span></div>
+    <div class="count hot2"><b id="cNoFollow">0</b><span data-i18n="tNoFollow">No sigues de vuelta</span></div>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="following" data-i18n="tFollowing">Siguiendo</button>
+    <button class="tab" data-tab="followers" data-i18n="tFollowers">Seguidores</button>
+    <button class="tab" data-tab="noback" data-i18n="tNoBack">No te siguen de vuelta</button>
+    <button class="tab" data-tab="nofollow" data-i18n="tNoFollow">No sigues de vuelta</button>
+  </div>
+  <div class="tools">
+    <input type="search" id="q" placeholder="Buscar usuario…">
+    <button class="btn small" id="copyBtn" data-i18n="copy">Copiar</button>
+    <button class="btn small" id="dlBtn" data-i18n="download">Descargar .txt</button>
+  </div>
+  <ul id="list" class="list"></ul>
+  <p class="cacheline"><span id="cacheinfo"></span> · <a href="#" id="openApp" data-i18n="openApp">Abrir también en la app web</a></p>
+</section>
+
+<p class="warn" data-i18n="warn">⚠️ Ritmo lento a propósito. Si Instagram pide verificar que eres tú, hazlo en la pestaña y vuelve a intentar más tarde.</p>
+<script src="popup.js"></script>
+</body>
+</html>
