@@ -38,3 +38,7 @@ siguen ahí sin volver a extraer.
 `extractor.js` (lógica de extracción con ritmo lento) · `icons/`
 
 Hecho con 💜 por **Tec Girl** — sin afiliación con Instagram ni Meta.
+
+## Contribuidores
+
+Contribución preparada en colaboración por **psehgaft**, **san985tos**, **frankjunker87-arch** y **tec-girl**.
